@@ -26,15 +26,18 @@
 
   <remote  name="tm"
            fetch="git://github.com/TheMuppets/" />
+           
+  <remote  name="vaz"
+           fetch="git://github.com/CarbonMod/" />
 
   <default revision="refs/heads/kk"
            remote="cr"
            sync-j="4" />
 
-  <project path="build" name="CarbonDev/android_build" groups="pdk" >
+  <project path="build" name="CarbonMod/android_build" groups="pdk" >
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
-  <project path="android" name="CarbonDev/android" />
+  <project path="android" name="CarbonMod/android" />
   <project path="abi/cpp" name="platform/abi/cpp" groups="pdk" remote="aosp" revision="refs/tags/android-4.4.4_r1" />
   <project path="art" name="CarbonDev/android_art" />
   <project path="bionic" name="CarbonDev/android_bionic" groups="pdk" />
@@ -493,5 +496,8 @@
   <project path="tools/motodev" name="platform/tools/motodev" groups="notdefault,motodev" remote="aosp" revision="refs/tags/android-4.4.4_r1" />
   <project path="tools/studio/cloud" name="platform/tools/studio/cloud" groups="notdefault,tools" remote="aosp" revision="refs/tags/android-4.4.4_r1" />
   <project path="tools/swt" name="platform/tools/swt" groups="notdefault,tools" remote="aosp" revision="refs/tags/android-4.4.4_r1" />
-  <project path="vendor/carbon" name="CarbonDev/android_vendor_carbon" />
+  <project path="vendor/carbon" name="CarbonMod/android_vendor_carbon" />
+  <project path="vendor/google" name="CarbonMod/android_vendor_google" />
+  <project path="device/lge/hammerhead" name="CarbonMod/android_device_lge_hammerhead" />
+  <project path="kernel/lge/hammerhead" name="CarbonMod/android_kernel_lge_hammerhead" />
 </manifest>
