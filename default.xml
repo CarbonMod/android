@@ -34,7 +34,7 @@
            remote="cr"
            sync-j="4" />
 
-  <project path="build" name="CarbonPrev/android_build" groups="pdk" >
+  <project path="build" name="CarbonMod/android_build" groups="pdk" >
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
   <project path="android" name="CarbonMod/android" />
@@ -486,7 +486,7 @@
   <project path="tools/motodev" name="platform/tools/motodev" groups="notdefault,motodev" remote="aosp" revision="refs/tags/android-4.4.4_r1" />
   <project path="tools/studio/cloud" name="platform/tools/studio/cloud" groups="notdefault,tools" remote="aosp" revision="refs/tags/android-4.4.4_r1" />
   <project path="tools/swt" name="platform/tools/swt" groups="notdefault,tools" remote="aosp" revision="refs/tags/android-4.4.4_r1" />
-  <project path="vendor/carbon" name="CarbonPrev/android_vendor_carbon" revision="vaz" />
+  <project path="vendor/carbon" name="CarbonMod/android_vendor_carbon" revision="vaz" />
   <project path="vendor/google" name="android_vendor_google" remote="vaz" revision="kk" />
   <project path="device/lge/hammerhead" name="android_device_lge_hammerhead" remote="vaz" revision="kk" />
   <project path="kernel/lge/hammerhead" name="android_kernel_lge_hammerhead" remote="vaz" revision="kk" />
